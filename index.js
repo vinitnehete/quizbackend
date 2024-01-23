@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 const PORT = 8088;
 const doctors = require("./doctors.json");
-
+const cors = require("cors");
+app.use(cors());
 app.listen(PORT, () => {
     console.log("Listening");
 });
